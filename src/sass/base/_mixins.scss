@@ -11,3 +11,16 @@
         top: -21%;
     }
 }
+
+@mixin before_li {
+    &::before {
+        content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: $main-color;
+            border-radius: 100%;
+            left: 0px;
+            top: 3%;
+    }
+}
