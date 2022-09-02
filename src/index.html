@@ -231,37 +231,37 @@
             <div class="skills__wrapper">
                 <div class="skills__items">
                     <div class="skills__item">
-                        <img src="icons/skills/html5.svg" alt="html5">
+                        <div class="skills__img"><img src="icons/skills/html5.svg" alt="html5"></div>
                         <h3 class="title title_fz14 skills__item-title">HTML5</h3>
                         <div class="skills__descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                     </div>
                     <div class="skills__item">
-                        <img src="icons/skills/css3.svg" alt="css3">
+                        <div class="skills__img"><img src="icons/skills/css3.svg" alt="css3"></div>
                         <h3 class="title title_fz14 skills__item-title">CSS3</h3>
                         <div class="skills__descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                     </div>
                     <div class="skills__item">
-                        <img src="icons/skills/js.svg" alt="js">
+                        <div class="skills__img"><img src="icons/skills/js.svg" alt="js"></div>
                         <h3 class="title title_fz14 skills__item-title">Java Script</h3>
                         <div class="skills__descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                     </div>
                     <div class="skills__item">
-                        <img src="icons/skills/jquery.svg" alt="jquery">
+                        <div class="skills__img"><img src="icons/skills/jquery.svg" alt="jquery"></div>
                         <h3 class="title title_fz14 skills__item-title skills__item-title_mt34">Jquery</h3>
                         <div class="skills__descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                     </div>
                     <div class="skills__item">
-                        <img src="icons/skills/react.svg" alt="react">
+                        <div class="skills__img"><img src="icons/skills/react.svg" alt="react"></div>
                         <h3 class="title title_fz14 skills__item-title">React</h3>
                         <div class="skills__descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
                     </div>
                     <div class="skills__item">
-                        <img src="icons/skills/node.js.svg" alt="node.js">
+                        <div class="skills__img"><img src="icons/skills/node.js.svg" alt="node.js"></div>
                         <h3 class="title title_fz14 skills__item-title">Node.js</h3>
                         <div class="skills__descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
                     </div>
                     <div class="skills__item">
-                        <img src="icons/skills/mongo.db.svg" alt="mongo.db">
+                        <div class="skills__img"><img src="icons/skills/mongo.db.svg" alt="mongo.db"></div>
                         <h3 class="title title_fz14 skills__item-title skills__item-title_mt32">Mongo.db</h3>
                         <div class="skills__descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
                     </div>                    
@@ -412,20 +412,43 @@
                     <h2 class="title title_fz16 contacts__title">Контакты</h2>
                     <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
                     <div class="divider"></div>
-                </div>
-
-                <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
+                    <div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
 
                 <div class="contacts__social">
-                    <a href="#" class="contacts__link"><img src="icons/social/facebook.svg" alt="facebook"></a>
-                    <a href="#" class="contacts__link"><img src="icons/social/instagram.svg" alt="instagram"></a>
-                    <a href="#" class="contacts__link"><img src="icons/social/telegram.svg" alt="telegram"></a>
+                    <a href="#" class="contacts__link">
+                        <img class="contacts__link_rotate" src="icons/social/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="contacts__link">
+                        <img src="icons/social/telegram.svg" alt="telegram">
+                    </a>
+                    <a href="#" class="contacts__link">
+                        <img class="contacts__link_rotate" src="icons/social/instagram.svg" alt="instagram">
+                    </a>
                 </div>
                 <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
 
                 <form action="#" class="contacts__form">
-                    
+                    <div class="contacts__input">
+                        <input required name="name" id="name" type="text">
+                        <label for="name">Ваше имя</label>
+                    </div>
+                    <div class="contacts__input">
+                        <input required name="email" id="email" type="email">
+                        <label for="email">Ваша почта</label>
+                    </div>
+                    <div class="contacts__textarea">
+                        <textarea name="text" id="text"></textarea>
+                        <label for="text">Ваше сообщение</label>
+                    </div>
+                    <div class="contacts__triggers">
+                        <button class="contacts__btn btn">Отправить сообщение</button>
+                        <div class="contacts__policy">
+                            <input required type="checkbox">
+                            <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                        </div>
+                    </div>
                 </form>
+                </div>                
             </div>
         </div>
     </section>
