@@ -230,6 +230,14 @@
             }
         }
     }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            display: block;
+        }
+    }
 }
 
 @media (max-width: 576px) {
